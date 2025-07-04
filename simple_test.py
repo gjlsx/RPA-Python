@@ -4,7 +4,7 @@ print("RPA 脚本开始...")
 
 # 1. 初始化 RPA 环境
 # visual_automation=False 和 chrome_browser=True 是默认值，可以不写
-# 这会自动下载并配置所需的组件
+# 这会自动下载并配置所需的组件。ok
 if not r.init():
     print("初始化 RPA 环境失败")
     exit()
