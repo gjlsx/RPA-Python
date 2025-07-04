@@ -9,6 +9,8 @@ To install this Python package for RPA (robotic process automation) -
 pip install rpa
 ```
 
+add github gjlsx  ,by wind 250704
+
 To use it in Jupyter notebook, Python script or interactive shell -
 ```python
 import rpa as r
