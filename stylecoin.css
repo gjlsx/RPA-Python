@@ -147,6 +147,24 @@ button:active {
     font-size: 15px;
 }
 
+.recommendation-item p.likes {
+    font-size: 14px;
+    color: #e74c3c; /* Red color for heart/likes */
+    margin-top: 8px;
+    margin-bottom: 0; /* Remove bottom margin if it's the last item */
+}
+
+.recommendation-name-link {
+    text-decoration: none;
+    color: #2980b9; /* Link color */
+    font-weight: bold;
+}
+
+.recommendation-name-link:hover {
+    text-decoration: underline;
+    color: #1f618d;
+}
+
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
