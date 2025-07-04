@@ -7,7 +7,7 @@
 import rpa as r
 
 # use init() to start TagUI, it auto downloads TagUI on first run
-# default init(visual_automation = False, chrome_browser = True)
+# default init(visual_automation = False, chrome_browser = True) ??
 r.init()
 
 # use url('your_url') to go to web page, url() returns current URL
