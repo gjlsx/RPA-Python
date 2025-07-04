@@ -1,0 +1,111 @@
+/* strategy_detail.css */
+
+body {
+    background-color: #f8f9fa; /* Lighter background for detail page */
+}
+
+.strategy-detail-container {
+    max-width: 800px; /* Wider container for more content */
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: #ffffff;
+    padding: 30px 40px; /* More padding */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.back-link {
+    display: inline-block;
+    margin-bottom: 25px;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+#strategy-name {
+    color: #343a40;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #e9ecef;
+    text-align: center;
+}
+
+.detail-section {
+    margin-bottom: 30px;
+}
+
+.detail-section h2 {
+    color: #495057;
+    font-size: 20px;
+    margin-bottom: 12px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.detail-section p,
+.detail-section ul,
+.detail-section pre {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #495057;
+}
+
+#strategy-formula {
+    background-color: #e9ecef;
+    padding: 15px;
+    border-radius: 5px;
+    white-space: pre-wrap; /* Allows text to wrap in pre */
+    word-wrap: break-word; /* Breaks long words if necessary */
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    border: 1px solid #ced4da;
+}
+
+#strategy-historical-comments {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#strategy-historical-comments li {
+    background-color: #f8f9fa;
+    padding: 12px 15px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    border: 1px solid #e9ecef;
+}
+
+#strategy-historical-comments li strong {
+    color: #007bff;
+}
+
+/* Responsive adjustments for detail page */
+@media (max-width: 768px) {
+    .strategy-detail-container {
+        padding: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    #strategy-name {
+        font-size: 24px;
+    }
+
+    .detail-section h2 {
+        font-size: 18px;
+    }
+
+    .detail-section p,
+    .detail-section ul,
+    .detail-section pre {
+        font-size: 15px;
+    }
+
+    #strategy-formula {
+        font-size: 14px;
+    }
+}
