@@ -1,0 +1,193 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column; /* Allow items to stack vertically */
+    align-items: center; /* Keep container centered horizontally */
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+    /* overflow-y: auto; */ /* Allow body to scroll if container gets too tall, alternative to container scroll */
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px; /* Add some space before recommendations */
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #34495e;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+
+.input-section,
+.strategy-section {
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="text"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: #fdfdfd;
+}
+
+input[type="text"]:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.25);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+button:active {
+    background-color: #2471a3;
+}
+
+/* Recommendations Section Styling */
+.recommendations-section {
+    background-color: #fff;
+    padding: 20px 30px; /* Less top/bottom padding, more side */
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px; /* Add space from the container above */
+}
+
+.recommendations-section h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.recommendation-item {
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.recommendation-item:last-child {
+    margin-bottom: 0;
+}
+
+.recommendation-item h3 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    color: #34495e;
+}
+
+.recommendation-item p {
+    margin-bottom: 5px;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.recommendation-item p.score {
+    font-weight: bold;
+    color: #3498db;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.recommendation-item p.likes {
+    font-size: 14px;
+    color: #e74c3c; /* Red color for heart/likes */
+    margin-top: 8px;
+    margin-bottom: 0; /* Remove bottom margin if it's the last item */
+}
+
+.recommendation-name-link {
+    text-decoration: none;
+    color: #2980b9; /* Link color */
+    font-weight: bold;
+}
+
+.recommendation-name-link:hover {
+    text-decoration: underline;
+    color: #1f618d;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container, .recommendations-section {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    input[type="text"],
+    select,
+    textarea,
+    button {
+        font-size: 15px;
+    }
+
+    .recommendations-section h2 {
+        font-size: 20px;
+    }
+
+    .recommendation-item h3 {
+        font-size: 18px;
+    }
+}
