@@ -8,7 +8,7 @@ def print_kids_playing():
     ￥ ￥        ￥ ￥
    ￥  ￥       ￥  ￥
   ￥   ￥      ￥   ￥
-         ❤
+         ❤❤❤
 '''
     print(scene)
 
