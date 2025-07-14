@@ -68,3 +68,4 @@ This project is an RPA system for quantitative strategy input and management. Us
 
 如需英文原始页面，请至bak/目录查找。For original English pages, please check the bak/ directory.
 
+后续将使用v0.dev进行前端页面开发，尽量使用gemini cli,claude code等自动化开发，人工审核计划方向，大流程，结果，
