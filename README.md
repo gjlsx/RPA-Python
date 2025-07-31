@@ -51,7 +51,7 @@ This project is an RPA system for quantitative strategy input and management. Us
 ## 版本与进度 Version & Milestones
 
 - 当前版本：v1.0.0
-- 更新时间：2024-07-08
+- 更新时间：2025-07-08
 - 主要进展：实现页面批量汉化、备份、自动化脚本、文档完善
 
 ---
