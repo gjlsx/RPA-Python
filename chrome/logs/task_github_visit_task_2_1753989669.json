@@ -1,0 +1,16 @@
+[
+  {
+    "timestamp": "2025-08-01 03:17:47",
+    "chrome_num": 20,
+    "operation": "connect",
+    "message": "成功连接到 Chrome_20",
+    "level": "INFO"
+  },
+  {
+    "timestamp": "2025-08-01 03:21:06",
+    "chrome_num": 20,
+    "operation": "navigate",
+    "message": "成功导航到: https://github.com",
+    "level": "INFO"
+  }
+]

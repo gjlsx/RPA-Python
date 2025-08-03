@@ -29,7 +29,7 @@ def create_chrome_shortcut(shortcut_path, target_path, user_data_dir, debug_port
         
         # 设置目标程序和参数
         shortcut.Targetpath = target_path
-        shortcut.Arguments = f'--user-data-dir={user_data_dir} --remote-debugging-port={debug_port}'
+        shortcut.Arguments = f'--user-data-dir={user_data_dir} --remote-debugging-port={debug_port} --disable-session-crashed-bubble --disable-infobars --no-first-run --disable-restore-session-state --disable-background-mode --disable-background-timer-throttling --disable-backgrounding-occluded-windows --no-default-browser-check --disable-translate --disable-features=TranslateUI --disable-ipc-flooding-protection'
         
         # 设置工作目录
         shortcut.WorkingDirectory = working_dir
@@ -84,11 +84,13 @@ def generate_chrome_shortcuts(start_num, count, output_dir=".", chrome_path=None
     
     # 默认用户数据基础目录
     if base_data_dir is None:
-        base_data_dir = r"c:\tools\chromes"
+        base_data_dir = r"d:\tools\chromes"
     
     # Chrome工作目录
     working_dir = os.path.dirname(chrome_path)
     
+    # 输出目录
+    output_dir=base_data_dir
     # 确保输出目录存在
     os.makedirs(output_dir, exist_ok=True)
     
@@ -148,9 +150,9 @@ def main():
     
     parser.add_argument('start_num', type=int, help='起始序号')
     parser.add_argument('count', type=int, help='生成数量')
-    parser.add_argument('-o', '--output', default='.', help='输出目录 (默认: 当前目录)')
+    parser.add_argument('-o', '--output', default='.', help='输出目录 (默认: d:\\tools\\chromes)')
     parser.add_argument('-c', '--chrome', help='Chrome可执行文件路径 (默认: 自动检测)')
-    parser.add_argument('-d', '--data-dir', help='用户数据基础目录 (默认: c:\\tools\\chromes)')
+    parser.add_argument('-d', '--data-dir', help='用户数据基础目录 (默认: d:\\tools\\chromes)')
     
     args = parser.parse_args()
     
@@ -162,7 +164,7 @@ def main():
         success = generate_chrome_shortcuts(
             start_num=args.start_num,
             count=args.count,
-            output_dir=args.output,
+            output_dir=args.data_dir,
             chrome_path=args.chrome,
             base_data_dir=args.data_dir
         )

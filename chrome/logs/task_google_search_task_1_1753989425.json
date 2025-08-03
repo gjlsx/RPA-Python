@@ -1,0 +1,37 @@
+[
+  {
+    "timestamp": "2025-08-01 03:17:00",
+    "chrome_num": 19,
+    "operation": "connect",
+    "message": "成功连接到 Chrome_19",
+    "level": "INFO"
+  },
+  {
+    "timestamp": "2025-08-01 03:17:00",
+    "chrome_num": 19,
+    "operation": "navigate",
+    "message": "导航失败 (尝试 1/3): 'ChromePopupHandler' object has no attribute 'handle_all_popups'",
+    "level": "ERROR"
+  },
+  {
+    "timestamp": "2025-08-01 03:17:03",
+    "chrome_num": 19,
+    "operation": "navigate",
+    "message": "导航失败 (尝试 2/3): 'ChromePopupHandler' object has no attribute 'handle_all_popups'",
+    "level": "ERROR"
+  },
+  {
+    "timestamp": "2025-08-01 03:17:05",
+    "chrome_num": 19,
+    "operation": "navigate",
+    "message": "导航失败 (尝试 3/3): 'ChromePopupHandler' object has no attribute 'handle_all_popups'",
+    "level": "ERROR"
+  },
+  {
+    "timestamp": "2025-08-01 03:17:05",
+    "chrome_num": 19,
+    "operation": "sequence",
+    "message": "必需动作失败，停止执行: navigate",
+    "level": "ERROR"
+  }
+]

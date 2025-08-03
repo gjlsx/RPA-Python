@@ -1,0 +1,46 @@
+{
+  "summary": {
+    "total_tasks": 2,
+    "completed_tasks": 0,
+    "failed_tasks": 2,
+    "success_rate": 0.0
+  },
+  "completed_tasks": [],
+  "failed_tasks": [
+    {
+      "task_id": "google_search_task_1",
+      "chrome_num": 19,
+      "status": "partial_success",
+      "success_rate": 0.0,
+      "total_actions": 1,
+      "successful_actions": 0,
+      "results": [
+        {
+          "action_index": 0,
+          "action_type": "navigate",
+          "success": false
+        }
+      ],
+      "completed_at": 1753989425.8674192,
+      "duration": 6.080581903457642
+    },
+    {
+      "task_id": "github_visit_task_2",
+      "chrome_num": 20,
+      "status": "partial_success",
+      "success_rate": 0.0,
+      "total_actions": 1,
+      "successful_actions": 0,
+      "results": [
+        {
+          "action_index": 0,
+          "action_type": "navigate",
+          "success": false
+        }
+      ],
+      "completed_at": 1753989429.1686893,
+      "duration": 9.3818519115448
+    }
+  ],
+  "generated_at": "2025-08-01 03:17:17"
+}

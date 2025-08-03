@@ -1,0 +1,103 @@
+{
+  "system": {
+    "max_concurrent_tasks": 5,
+    "default_timeout": 30,
+    "retry_attempts": 3,
+    "retry_delay": 5,
+    "log_level": "INFO"
+  },
+  "chrome": {
+    "base_port": 10000,
+    "data_dir_base": "c:\\tools\\chromes",
+    "default_chrome_path": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+    "startup_delay": 3,
+    "page_load_timeout": 30
+  },
+  "automation": {
+    "implicit_wait": 10,
+    "element_wait_timeout": 15,
+    "popup_handle_timeout": 5,
+    "screenshot_on_error": true,
+    "save_operation_logs": true
+  },
+  "monitoring": {
+    "log_directory": "logs",
+    "max_log_entries": 1000,
+    "system_metrics_interval": 30,
+    "cleanup_logs_days": 7
+  },
+  "websites": {
+    "default_sites": [
+      "https://www.google.com",
+      "https://github.com",
+      "https://stackoverflow.com"
+    ],
+    "login_sites": [
+      "https://accounts.google.com"
+    ]
+  },
+  "task_templates": {
+    "google_search": {
+      "name": "Google搜索模板",
+      "actions": [
+        {
+          "type": "navigate",
+          "url": "https://www.google.com"
+        },
+        {
+          "type": "input",
+          "selectors": ["input[name='q']", "//input[@name='q']"],
+          "text": "{search_term}"
+        },
+        {
+          "type": "click",
+          "selectors": ["input[name='btnK']", "//input[@name='btnK']"]
+        }
+      ]
+    },
+    "github_visit": {
+      "name": "GitHub访问模板",
+      "actions": [
+        {
+          "type": "navigate",
+          "url": "https://github.com"
+        },
+        {
+          "type": "wait",
+          "seconds": 3
+        }
+      ]
+    },
+    "google_login": {
+      "name": "Google登录模板",
+      "actions": [
+        {
+          "type": "navigate",
+          "url": "https://accounts.google.com"
+        },
+        {
+          "type": "input",
+          "selectors": ["input[type='email']", "#identifierId"],
+          "text": "{email}"
+        },
+        {
+          "type": "click",
+          "selectors": ["#identifierNext", "//span[text()='下一步']"]
+        },
+        {
+          "type": "wait",
+          "seconds": 2
+        },
+        {
+          "type": "input",
+          "selectors": ["input[type='password']", "input[name='password']"],
+          "text": "{password}"
+        },
+        {
+          "type": "click",
+          "selectors": ["#passwordNext", "//span[text()='下一步']"]
+        }
+      ]
+    }
+  }
+}

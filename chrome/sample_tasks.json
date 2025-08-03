@@ -1,0 +1,51 @@
+[
+  {
+    "task_id": "google_search_task_1",
+    "chrome_num": 19,
+    "priority": 1,
+    "actions": [
+      {
+        "type": "navigate",
+        "url": "https://www.google.com"
+      },
+      {
+        "type": "input",
+        "selectors": [
+          "input[name='q']",
+          "//input[@name='q']"
+        ],
+        "text": "Python automation"
+      },
+      {
+        "type": "click",
+        "selectors": [
+          "input[name='btnK']",
+          "//input[@name='btnK']"
+        ]
+      }
+    ],
+    "metadata": {
+      "description": "Google搜索测试",
+      "category": "search"
+    }
+  },
+  {
+    "task_id": "github_visit_task_2",
+    "chrome_num": 20,
+    "priority": 2,
+    "actions": [
+      {
+        "type": "navigate",
+        "url": "https://github.com"
+      },
+      {
+        "type": "wait",
+        "seconds": 3
+      }
+    ],
+    "metadata": {
+      "description": "访问GitHub",
+      "category": "visit"
+    }
+  }
+]

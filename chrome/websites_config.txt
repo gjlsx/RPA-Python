@@ -1,0 +1,5 @@
+# 网页配置文件 - 每行一个网址
+# 这些网页将在每个Chrome实例中打开
+https://www.google.com
+https://github.com
+https://x.com

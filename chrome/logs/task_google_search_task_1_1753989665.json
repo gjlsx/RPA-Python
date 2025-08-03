@@ -1,0 +1,23 @@
+[
+  {
+    "timestamp": "2025-08-01 03:17:47",
+    "chrome_num": 19,
+    "operation": "connect",
+    "message": "成功连接到 Chrome_19",
+    "level": "INFO"
+  },
+  {
+    "timestamp": "2025-08-01 03:20:49",
+    "chrome_num": 19,
+    "operation": "navigate",
+    "message": "成功导航到: https://www.google.com",
+    "level": "INFO"
+  },
+  {
+    "timestamp": "2025-08-01 03:21:05",
+    "chrome_num": 19,
+    "operation": "sequence",
+    "message": "动作执行异常: HTTPConnectionPool(host='localhost', port=2913): Max retries exceeded with url: /session/20095ebfc99b76f2d28d96976254a100/element (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000019A57D167D0>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))",
+    "level": "ERROR"
+  }
+]
